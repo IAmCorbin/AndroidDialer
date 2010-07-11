@@ -41,9 +41,7 @@ public class Dialer extends Activity implements OnClickListener {
 		        Matcher matcher = pattern.matcher(num);
 				if(!matcher.find()) {
     				this.number.setText("Dialing number - " + num + " . . . ");
-        			Intent intent = new Intent();
-        			intent.setAction(Intent.ACTION_CALL);
-        			intent.setData(Uri.parse("tel:" + num));
+        			Intent intent = new Intent(Intent.ACTION_CALL,Uri.parse("tel:" + num));
         			startActivityForResult(intent,1);
 				} else
 					this.number.setText("Invalid Number");	
