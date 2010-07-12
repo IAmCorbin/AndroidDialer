@@ -5,20 +5,17 @@ import java.util.regex.Pattern;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.Contacts.People;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Dialer extends Activity implements OnClickListener {
 	private static final String TAG = "Dialer";
-	private Button buttonDial;
+	private ImageButton buttonDial;
 	private TextView number;
 	
     /** Called when the activity is first created. */
@@ -27,7 +24,7 @@ public class Dialer extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
      
-        this.buttonDial = (Button)findViewById(R.id.buttonDial);
+        this.buttonDial = (ImageButton)findViewById(R.id.buttonDial);
         this.number = (TextView)findViewById(R.id.displayNumber);
                 
         this.buttonDial.setOnClickListener(this);

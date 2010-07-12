@@ -8,12 +8,12 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class DialPadView extends LinearLayout implements OnClickListener {
-	Button buttons[] = new Button[12];
+	ImageButton buttons[] = new ImageButton[12];
 	TextView display;
 	
 	public DialPadView(Context context, AttributeSet  attrs) {
@@ -26,20 +26,20 @@ public class DialPadView extends LinearLayout implements OnClickListener {
 		
 		this.display = (TextView)findViewById(R.id.displayNumber);
 		
-		this.buttons[0] = (Button)findViewById(R.id.button0);
-		this.buttons[1] = (Button)findViewById(R.id.button1);
-		this.buttons[2] = (Button)findViewById(R.id.button2);
-		this.buttons[3] = (Button)findViewById(R.id.button3);
-		this.buttons[4] = (Button)findViewById(R.id.button4);
-		this.buttons[5] = (Button)findViewById(R.id.button5);
-		this.buttons[6] = (Button)findViewById(R.id.button6);
-		this.buttons[7] = (Button)findViewById(R.id.button7);
-		this.buttons[8] = (Button)findViewById(R.id.button8);
-		this.buttons[9] = (Button)findViewById(R.id.button9);
-		this.buttons[10] = (Button)findViewById(R.id.buttonStar);
-		this.buttons[11] = (Button)findViewById(R.id.buttonPound);
+		this.buttons[0] = (ImageButton)findViewById(R.id.button0);
+		this.buttons[1] = (ImageButton)findViewById(R.id.button1);
+		this.buttons[2] = (ImageButton)findViewById(R.id.button2);
+		this.buttons[3] = (ImageButton)findViewById(R.id.button3);
+		this.buttons[4] = (ImageButton)findViewById(R.id.button4);
+		this.buttons[5] = (ImageButton)findViewById(R.id.button5);
+		this.buttons[6] = (ImageButton)findViewById(R.id.button6);
+		this.buttons[7] = (ImageButton)findViewById(R.id.button7);
+		this.buttons[8] = (ImageButton)findViewById(R.id.button8);
+		this.buttons[9] = (ImageButton)findViewById(R.id.button9);
+		this.buttons[10] = (ImageButton)findViewById(R.id.button_star);
+		this.buttons[11] = (ImageButton)findViewById(R.id.button_pound);
 		
-		for(Button button : this.buttons) {
+		for(ImageButton button : this.buttons) {
 			button.setOnClickListener(this);  
 		}
 	}
@@ -82,10 +82,10 @@ public class DialPadView extends LinearLayout implements OnClickListener {
 			case R.id.button9:
 				this.display.append("9");
 				break;
-			case R.id.buttonStar:
+			case R.id.button_star:
 				this.display.append("*");
 				break;
-			case R.id.buttonPound:
+			case R.id.button_pound:
 				this.display.append("#");
 				break;
 		}

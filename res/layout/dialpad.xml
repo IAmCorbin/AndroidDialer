@@ -1,43 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:orientation="vertical">
-	<TextView android:id="@+id/displayNumber" android:layout_width="wrap_content"
-		android:layout_height="wrap_content"/>
+		android:orientation="vertical" android:padding="3dp">
+	<TextView android:id="@+id/displayNumber" android:layout_width="@dimen/number" android:layout_gravity="center"
+		android:layout_height="wrap_content" android:background="@android:color/black" android:textSize="20sp"/>
 	<LinearLayout android:layout_width="wrap_content"
-		android:layout_height="40dp">
-		<Button android:id="@+id/button1" android:text="@string/button1"
-			android:layout_width="fill_parent" android:layout_height="fill_parent"></Button>
-		<Button android:id="@+id/button2" android:text="@string/button2"
-			android:layout_width="fill_parent" android:layout_height="fill_parent"></Button>
-		<Button android:id="@+id/button3" android:text="@string/button3"
-			android:layout_width="fill_parent" android:layout_height="fill_parent"></Button>
+		android:layout_height="@dimen/button_height">
+		<ImageButton android:id="@+id/button1" android:src="@drawable/button1" style="@style/dial_button"></ImageButton>
+		<ImageButton android:id="@+id/button2" android:src="@drawable/button2" style="@style/dial_button"></ImageButton>
+		<ImageButton android:id="@+id/button3" android:src="@drawable/button3" style="@style/dial_button"></ImageButton>
 	</LinearLayout>
 	<LinearLayout android:layout_width="wrap_content"
-		android:layout_height="40dp">
-		<Button android:id="@+id/button4" android:text="@string/button4"
-			android:layout_width="fill_parent" android:layout_height="fill_parent"></Button>
-		<Button android:id="@+id/button5" android:text="@string/button5"
-			android:layout_width="fill_parent" android:layout_height="fill_parent"></Button>
-		<Button android:id="@+id/button6" android:text="@string/button6"
-			android:layout_width="fill_parent" android:layout_height="fill_parent"></Button>
+		android:layout_height="@dimen/button_height">
+		<ImageButton android:id="@+id/button4" android:src="@drawable/button4" style="@style/dial_button"></ImageButton>
+		<ImageButton android:id="@+id/button5" android:src="@drawable/button5" style="@style/dial_button"></ImageButton>
+		<ImageButton android:id="@+id/button6" android:src="@drawable/button6" style="@style/dial_button"></ImageButton>
 	</LinearLayout>
 	<LinearLayout android:layout_width="wrap_content"
-		android:layout_height="40dp">
-		<Button android:id="@+id/button7" android:text="@string/button7"
-			android:layout_width="fill_parent" android:layout_height="fill_parent"></Button>
-		<Button android:id="@+id/button8" android:text="@string/button8"
-			android:layout_width="fill_parent" android:layout_height="fill_parent"></Button>
-		<Button android:id="@+id/button9" android:text="@string/button8"
-			android:layout_width="fill_parent" android:layout_height="fill_parent"></Button>
+		android:layout_height="@dimen/button_height">
+		<ImageButton android:id="@+id/button7" android:src="@drawable/button7" style="@style/dial_button"></ImageButton>
+		<ImageButton android:id="@+id/button8" android:src="@drawable/button8" style="@style/dial_button"></ImageButton>
+		<ImageButton android:id="@+id/button9" android:src="@drawable/button9" style="@style/dial_button"></ImageButton>
 	</LinearLayout>
 	<LinearLayout android:layout_width="wrap_content"
-		android:layout_height="40dp">
-		<Button android:id="@+id/buttonStar" android:text="@string/buttonStar"
-			android:layout_width="fill_parent" android:layout_height="fill_parent"></Button>
-		<Button android:id="@+id/button0" android:text="@string/button0"
-			android:layout_width="fill_parent" android:layout_height="fill_parent"></Button>
-		<Button android:id="@+id/buttonPound" android:text="@string/buttonPound"
-			android:layout_width="fill_parent" android:layout_height="fill_parent"></Button>
+		android:layout_height="@dimen/button_height">
+		<ImageButton android:id="@+id/button_star" android:src="@drawable/button_star" style="@style/dial_button"></ImageButton>
+		<ImageButton android:id="@+id/button0" android:src="@drawable/button0" style="@style/dial_button"></ImageButton>
+		<ImageButton android:id="@+id/button_pound" android:src="@drawable/button_pound" style="@style/dial_button"></ImageButton>
 	</LinearLayout>
 </LinearLayout>
