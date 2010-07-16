@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:orientation="vertical" android:padding="3dp">
-	<TextView android:id="@+id/displayNumber" android:layout_width="@dimen/number" android:layout_gravity="center"
+	<TextView android:id="@+id/displayNumber" android:layout_width="@dimen/number" android:gravity="center"
 		android:layout_height="wrap_content" android:background="@android:color/black" android:textSize="20sp"/>
 	<LinearLayout android:layout_width="wrap_content"
 		android:layout_height="@dimen/button_height">

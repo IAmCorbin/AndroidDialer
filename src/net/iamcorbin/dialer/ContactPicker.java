@@ -33,8 +33,8 @@ public class ContactPicker extends Activity implements OnItemClickListener {
 		this.c = getContentResolver().query(Contacts.CONTENT_URI, cols, where, null, Contacts.DISPLAY_NAME);
 		startManagingCursor(this.c);
 		
-		String[] from = new String[] { Contacts.DISPLAY_NAME, Contacts._ID };
-		int[] to = new int[] { R.id.contactNameTextView, R.id.contactConnectionsTextView };
+		String[] from = new String[] { Contacts.DISPLAY_NAME };
+		int[] to = new int[] { R.id.contactNameTextView };
 		
 		SimpleCursorAdapter adapter = new SimpleCursorAdapter(this,
 												R.layout.contact,

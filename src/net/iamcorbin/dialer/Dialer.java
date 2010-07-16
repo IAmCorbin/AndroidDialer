@@ -20,6 +20,9 @@ public class Dialer extends Activity implements OnClickListener {
 	private static final int DIAL_NUMBER = 2;
 	private static final String TAG = "Dialer";
 	
+	//Preferences
+	private static final String PREF_NUMBER = "PREF_NUMBER";
+	
 	private ImageButton buttonDial;
 	private TextView number;
 	
@@ -86,4 +89,17 @@ public class Dialer extends Activity implements OnClickListener {
 				break;
 		}
 	}
+    
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+    	savedInstanceState.putString(PREF_NUMBER, this.number.getText().toString());
+    	
+    	super.onSaveInstanceState(savedInstanceState);    	
+    }
+    
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+    	if(savedInstanceState != null && savedInstanceState.containsKey(PREF_NUMBER))
+    		this.number.setText(savedInstanceState.getString(PREF_NUMBER));
+    }
 }

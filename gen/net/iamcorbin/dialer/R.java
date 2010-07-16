@@ -59,24 +59,23 @@ public final class R {
         public static final int icon=0x7f020028;
     }
     public static final class id {
-        public static final int button0=0x7f08000e;
-        public static final int button1=0x7f080004;
-        public static final int button2=0x7f080005;
-        public static final int button3=0x7f080006;
-        public static final int button4=0x7f080007;
-        public static final int button5=0x7f080008;
-        public static final int button6=0x7f080009;
-        public static final int button7=0x7f08000a;
-        public static final int button8=0x7f08000b;
-        public static final int button9=0x7f08000c;
-        public static final int buttonDial=0x7f080010;
-        public static final int button_pound=0x7f08000f;
-        public static final int button_star=0x7f08000d;
-        public static final int contactConnectionsTextView=0x7f080001;
+        public static final int button0=0x7f08000d;
+        public static final int button1=0x7f080003;
+        public static final int button2=0x7f080004;
+        public static final int button3=0x7f080005;
+        public static final int button4=0x7f080006;
+        public static final int button5=0x7f080007;
+        public static final int button6=0x7f080008;
+        public static final int button7=0x7f080009;
+        public static final int button8=0x7f08000a;
+        public static final int button9=0x7f08000b;
+        public static final int buttonDial=0x7f08000f;
+        public static final int button_pound=0x7f08000e;
+        public static final int button_star=0x7f08000c;
         public static final int contactNameTextView=0x7f080000;
-        public static final int contactsListView=0x7f080002;
-        public static final int displayNumber=0x7f080003;
-        public static final int pick_contact=0x7f080011;
+        public static final int contactsListView=0x7f080001;
+        public static final int displayNumber=0x7f080002;
+        public static final int pick_contact=0x7f080010;
     }
     public static final class layout {
         public static final int contact=0x7f030000;
