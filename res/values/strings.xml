@@ -15,5 +15,7 @@
     <string name="button0">0</string>
     <string name="buttonPound">#</string>
     
+    <string name="pick_contact">Pick A Contact</string>
+    
     <string name="buttonDial">Dial Number</string>
 </resources>
