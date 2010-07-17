@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -30,8 +31,11 @@ public class Dialer extends Activity implements OnClickListener {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Hide the title bar
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        
         setContentView(R.layout.main);
-     
+        
         this.buttonDial = (ImageButton)findViewById(R.id.buttonDial);
         this.number = (TextView)findViewById(R.id.displayNumber);
                 
@@ -63,7 +67,7 @@ public class Dialer extends Activity implements OnClickListener {
     		case R.id.buttonDial:
     			//Check for a valid number
     			String num = this.number.getText().toString();
-				Pattern pattern = Pattern.compile("[^0-9*#]");
+				Pattern pattern = Pattern.compile("[^0-9*#.() -]");
 		        Matcher matcher = pattern.matcher(num);
 				if(!matcher.find()) {
     				//Valid number - DIAL

@@ -8,12 +8,14 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class DialPadView extends LinearLayout implements OnClickListener {
 	ImageButton buttons[] = new ImageButton[12];
+	Button clearNumber;
 	TextView display;
 	
 	public DialPadView(Context context, AttributeSet  attrs) {
@@ -42,9 +44,20 @@ public class DialPadView extends LinearLayout implements OnClickListener {
 		for(ImageButton button : this.buttons) {
 			button.setOnClickListener(this);  
 		}
+		
+		this.clearNumber = (Button)findViewById(R.id.buttonClearNumber);
+		this.clearNumber.setOnClickListener(new Button.OnClickListener() {
+			public void onClick(View v) {
+				if(display.length() > 0) {
+					//trim the last character off
+					String num = display.getText().toString();
+					display.setText(num.substring(0, num.length()-1));
+				}
+			}
+		});
 	}
 
-	public void onClick(View v) {
+	public void onClick(View v) {		
 		//Clear display if a message is displayed before adding a number
 		Pattern pattern = Pattern.compile("[0-9*#]");
         Matcher matcher = pattern.matcher(this.display.getText().toString());
