@@ -4,6 +4,7 @@
 	<dimen name="button_width">100dp</dimen>
 	<dimen name="number_width">300dp</dimen>
 	<dimen name="number_height">50dp</dimen>
+	<dimen name="dial_height">70dp</dimen>
 	<dimen name="clear_height">40dp</dimen>
 	<dimen name="number_size">32sp</dimen>
 </resources>

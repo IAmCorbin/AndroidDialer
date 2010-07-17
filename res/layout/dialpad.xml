@@ -2,49 +2,74 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="wrap_content" android:layout_height="wrap_content"
 	android:orientation="vertical" android:padding="3dp">
-	<LinearLayout android:layout_height="wrap_content" android:layout_width="@dimen/number_width" android:orientation="horizontal">
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="@dimen/number_width" android:orientation="horizontal">
 		<TextView android:id="@+id/displayNumber"
 			android:layout_width="fill_parent" android:gravity="center"
 			android:layout_height="wrap_content" android:background="@android:color/black"
-			android:textSize="@dimen/number_size" android:layout_weight="1"/>
-		<Button android:id="@+id/buttonClearNumber" android:text="@string/clear_number" android:textSize="@dimen/number_size" android:background="@drawable/button_clear"
-			android:layout_width="wrap_content" android:layout_height="@dimen/clear_height" android:gravity="center" android:layout_gravity="center" android:padding="0dp"/>
+			android:textSize="@dimen/number_size" android:layout_weight="1" />
+		<Button android:id="@+id/buttonClearNumber" android:text="@string/clear_number"
+			android:textSize="@dimen/number_size" android:background="@drawable/button_green"
+			android:layout_width="wrap_content" android:layout_height="@dimen/clear_height"
+			android:gravity="center" android:layout_gravity="center"
+			android:padding="0dp" />
 		/>
 	</LinearLayout>
 	<LinearLayout android:layout_width="wrap_content"
 		android:layout_height="@dimen/button_height">
-		<ImageButton android:id="@+id/button1" android:src="@drawable/button1"
-			style="@style/dial_button"></ImageButton>
-		<ImageButton android:id="@+id/button2" android:src="@drawable/button2"
-			style="@style/dial_button"></ImageButton>
-		<ImageButton android:id="@+id/button3" android:src="@drawable/button3"
-			style="@style/dial_button"></ImageButton>
+		<LinearLayout android:id="@+id/button1" style="@style/dialpad_button" android:orientation="vertical">
+			<TextView android:text="@string/button1" android:textColor="#050" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<TextView android:text="@string/button1_sub" android:textColor="#050" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:id="@+id/button2" style="@style/dialpad_button" android:orientation="vertical">
+			<TextView android:text="@string/button2" android:textColor="#050" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<TextView android:text="@string/button2_sub" android:textColor="#050" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:id="@+id/button3" style="@style/dialpad_button" android:orientation="vertical">
+			<TextView android:text="@string/button3" android:textColor="#050" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<TextView android:text="@string/button3_sub" android:textColor="#050" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</LinearLayout>
 	</LinearLayout>
 	<LinearLayout android:layout_width="wrap_content"
 		android:layout_height="@dimen/button_height">
-		<ImageButton android:id="@+id/button4" android:src="@drawable/button4"
-			style="@style/dial_button"></ImageButton>
-		<ImageButton android:id="@+id/button5" android:src="@drawable/button5"
-			style="@style/dial_button"></ImageButton>
-		<ImageButton android:id="@+id/button6" android:src="@drawable/button6"
-			style="@style/dial_button"></ImageButton>
+		<LinearLayout android:id="@+id/button4" style="@style/dialpad_button" android:orientation="vertical">
+			<TextView android:text="@string/button4" android:textColor="#050" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<TextView android:text="@string/button4_sub" android:textColor="#050" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:id="@+id/button5" style="@style/dialpad_button" android:orientation="vertical">
+			<TextView android:text="@string/button5" android:textColor="#050" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<TextView android:text="@string/button5_sub" android:textColor="#050" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:id="@+id/button6" style="@style/dialpad_button" android:orientation="vertical">
+			<TextView android:text="@string/button6" android:textColor="#050" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<TextView android:text="@string/button6_sub" android:textColor="#050" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</LinearLayout>
 	</LinearLayout>
 	<LinearLayout android:layout_width="wrap_content"
 		android:layout_height="@dimen/button_height">
-		<ImageButton android:id="@+id/button7" android:src="@drawable/button7"
-			style="@style/dial_button"></ImageButton>
-		<ImageButton android:id="@+id/button8" android:src="@drawable/button8"
-			style="@style/dial_button"></ImageButton>
-		<ImageButton android:id="@+id/button9" android:src="@drawable/button9"
-			style="@style/dial_button"></ImageButton>
+		<LinearLayout android:id="@+id/button7" style="@style/dialpad_button" android:orientation="vertical">
+			<TextView android:text="@string/button7" android:textColor="#050" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<TextView android:text="@string/button7_sub" android:textColor="#050" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:id="@+id/button8" style="@style/dialpad_button" android:orientation="vertical">
+			<TextView android:text="@string/button8" android:textColor="#050" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<TextView android:text="@string/button8_sub" android:textColor="#050" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:id="@+id/button9" style="@style/dialpad_button" android:orientation="vertical">
+			<TextView android:text="@string/button9" android:textColor="#050" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<TextView android:text="@string/button9_sub" android:textColor="#050" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</LinearLayout>
 	</LinearLayout>
 	<LinearLayout android:layout_width="wrap_content"
 		android:layout_height="@dimen/button_height">
-		<ImageButton android:id="@+id/button_star" android:src="@drawable/button_star"
-			style="@style/dial_button"></ImageButton>
-		<ImageButton android:id="@+id/button0" android:src="@drawable/button0"
-			style="@style/dial_button"></ImageButton>
-		<ImageButton android:id="@+id/button_pound" android:src="@drawable/button_pound"
-			style="@style/dial_button"></ImageButton>
+		<LinearLayout android:id="@+id/buttonStar" style="@style/dialpad_button" android:orientation="vertical">
+			<TextView android:text="@string/buttonStar" android:textColor="#050" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:id="@+id/button0" style="@style/dialpad_button" android:orientation="vertical">
+			<TextView android:text="@string/button0" android:textColor="#050" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:id="@+id/buttonPound" style="@style/dialpad_button" android:orientation="vertical">
+			<TextView android:text="@string/buttonPound" android:textColor="#050" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</LinearLayout>
 	</LinearLayout>
 </LinearLayout>
