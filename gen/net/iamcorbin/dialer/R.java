@@ -82,13 +82,16 @@ public final class R {
         public static final int contactNameTextView=0x7f080000;
         public static final int contactsListView=0x7f080001;
         public static final int displayNumber=0x7f080002;
-        public static final int pick_contact=0x7f080011;
+        public static final int numbersListView=0x7f080012;
+        public static final int pick_contact=0x7f080013;
+        public static final int pick_number_name=0x7f080011;
     }
     public static final class layout {
         public static final int contact=0x7f030000;
         public static final int contact_picker=0x7f030001;
         public static final int dialpad=0x7f030002;
         public static final int main=0x7f030003;
+        public static final int number_picker=0x7f030004;
     }
     public static final class menu {
         public static final int menu=0x7f070000;
@@ -105,11 +108,12 @@ public final class R {
         public static final int button7=0x7f050008;
         public static final int button8=0x7f050009;
         public static final int button9=0x7f05000a;
-        public static final int buttonDial=0x7f050010;
+        public static final int buttonDial=0x7f050011;
         public static final int buttonPound=0x7f05000d;
         public static final int buttonStar=0x7f05000b;
         public static final int clear_number=0x7f05000e;
         public static final int pick_contact=0x7f05000f;
+        public static final int pick_number=0x7f050010;
         public static final int title=0x7f050001;
     }
     public static final class style {
