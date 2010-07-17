@@ -55,6 +55,12 @@ public class DialPadView extends LinearLayout implements OnClickListener {
 				}
 			}
 		});
+		this.clearNumber.setOnLongClickListener(new Button.OnLongClickListener() {
+			public boolean onLongClick(View v) {
+				display.setText("");
+				return true;
+			}
+		});
 	}
 
 	public void onClick(View v) {		
