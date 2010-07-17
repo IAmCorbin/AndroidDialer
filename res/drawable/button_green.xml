@@ -3,12 +3,12 @@
     <item 
     	android:state_pressed="true" 
     	android:state_enabled="true"
-        android:drawable="@drawable/button_star_down" />
+        android:drawable="@drawable/button_green_down" />
     <item 
     	android:state_focused="true" 
     	android:state_enabled="true"
-        android:drawable="@drawable/button_star_up" />
+        android:drawable="@drawable/button_green_up" />
     <item 
     	android:state_enabled="true"
-        android:drawable="@drawable/button_star_up" />
+        android:drawable="@drawable/button_green_up" />
 </selector>

@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,7 +26,7 @@ public class Dialer extends Activity implements OnClickListener {
 	//Preferences
 	private static final String PREF_NUMBER = "PREF_NUMBER";
 	
-	private ImageButton buttonDial;
+	private Button buttonDial;
 	private TextView number;
 	
     /** Called when the activity is first created. */
@@ -37,7 +38,7 @@ public class Dialer extends Activity implements OnClickListener {
         
         setContentView(R.layout.main);
         
-        this.buttonDial = (ImageButton)findViewById(R.id.buttonDial);
+        this.buttonDial = (Button)findViewById(R.id.buttonDial);
         this.number = (TextView)findViewById(R.id.displayNumber);
                 
         this.buttonDial.setOnClickListener(this);
