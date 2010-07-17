@@ -7,8 +7,8 @@
 			android:layout_width="fill_parent" android:gravity="center"
 			android:layout_height="wrap_content" android:background="@android:color/black"
 			android:textSize="@dimen/number_size" android:layout_weight="1"/>
-		<Button android:id="@+id/buttonClearNumber" android:text="@string/clear_number" android:textSize="@dimen/number_size"
-			android:layout_width="wrap_content" android:layout_height="@dimen/number_height" android:gravity="center" android:layout_gravity="center" android:padding="0dp"/>
+		<Button android:id="@+id/buttonClearNumber" android:text="@string/clear_number" android:textSize="@dimen/number_size" android:background="@drawable/button_clear"
+			android:layout_width="wrap_content" android:layout_height="@dimen/clear_height" android:gravity="center" android:layout_gravity="center" android:padding="0dp"/>
 		/>
 	</LinearLayout>
 	<LinearLayout android:layout_width="wrap_content"

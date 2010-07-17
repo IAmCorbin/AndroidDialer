@@ -13,8 +13,9 @@ public final class R {
     public static final class dimen {
         public static final int button_height=0x7f040000;
         public static final int button_width=0x7f040001;
+        public static final int clear_height=0x7f040004;
         public static final int number_height=0x7f040003;
-        public static final int number_size=0x7f040004;
+        public static final int number_size=0x7f040005;
         public static final int number_width=0x7f040002;
     }
     public static final class drawable {
@@ -49,16 +50,19 @@ public final class R {
         public static final int button9=0x7f02001c;
         public static final int button9_down=0x7f02001d;
         public static final int button9_up=0x7f02001e;
-        public static final int button_dial=0x7f02001f;
-        public static final int button_dial_down=0x7f020020;
-        public static final int button_dial_up=0x7f020021;
-        public static final int button_pound=0x7f020022;
-        public static final int button_pound_down=0x7f020023;
-        public static final int button_pound_up=0x7f020024;
-        public static final int button_star=0x7f020025;
-        public static final int button_star_down=0x7f020026;
-        public static final int button_star_up=0x7f020027;
-        public static final int icon=0x7f020028;
+        public static final int button_clear=0x7f02001f;
+        public static final int button_clear_down=0x7f020020;
+        public static final int button_clear_up=0x7f020021;
+        public static final int button_dial=0x7f020022;
+        public static final int button_dial_down=0x7f020023;
+        public static final int button_dial_up=0x7f020024;
+        public static final int button_pound=0x7f020025;
+        public static final int button_pound_down=0x7f020026;
+        public static final int button_pound_up=0x7f020027;
+        public static final int button_star=0x7f020028;
+        public static final int button_star_down=0x7f020029;
+        public static final int button_star_up=0x7f02002a;
+        public static final int icon=0x7f02002b;
     }
     public static final class id {
         public static final int button0=0x7f08000e;
