@@ -17,6 +17,7 @@
     
     <string name="clear_number">&lt;</string>
     <string name="pick_contact">Pick A Contact</string>
+    <string name="pick_number">Which Number?</string>
     
     <string name="buttonDial">Dial Number</string>
 </resources>

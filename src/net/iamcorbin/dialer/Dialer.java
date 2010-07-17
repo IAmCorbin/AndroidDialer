@@ -15,6 +15,7 @@ import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Dialer extends Activity implements OnClickListener {
 	private static final int PICK_CONTACT = 1;
@@ -71,7 +72,7 @@ public class Dialer extends Activity implements OnClickListener {
 		        Matcher matcher = pattern.matcher(num);
 				if(!matcher.find()) {
     				//Valid number - DIAL
-					this.number.setText("Dialing number - " + num + " . . . ");
+					Toast.makeText(this,"Dialing number - " + num + " . . . ", Toast.LENGTH_SHORT).show();
         			Intent intent = new Intent(Intent.ACTION_CALL,Uri.parse("tel:" + num));
         			startActivityForResult(intent, DIAL_NUMBER);
 				} else
