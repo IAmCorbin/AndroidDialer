@@ -6,7 +6,6 @@
 	<net.iamcorbin.dialer.DialPadView  
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content" android:layout_gravity="center"/>
-	<ImageButton android:id="@+id/buttonDial" android:layout_width="wrap_content" android:layout_gravity="center" android:background="@android:color/transparent"
-		android:layout_height="wrap_content" android:src="@drawable/button_green">
-	</ImageButton>
+	<Button android:id="@+id/buttonDial" android:text="@string/buttonDial" style="@style/dial_button">
+	</Button>
 </LinearLayout>
