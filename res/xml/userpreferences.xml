@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <ListPreference android:key="PREF_BUTTON_TYPE"
+  	android:title="@string/pref_button_type" android:summary="@string/pref_button_type_desc"
+  	android:entries="@array/button_types" android:entryValues="@array/button_types"
+  	android:dialogTitle="@string/pref_button_type"
+  	android:defaultValue="button_green"
+  />
+</PreferenceScreen>

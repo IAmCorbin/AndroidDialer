@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="button_types">
+		<item>button_green</item>
+		<item>button_smoke</item>
+	</string-array>
+</resources>
